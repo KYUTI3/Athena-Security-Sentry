@@ -3,7 +3,6 @@ from picamera import PiCamera
 import os
 from twilio.rest import Client
 from time import sleep
-import keyboard 
 
 
 
@@ -31,15 +30,15 @@ def stop_camera():
     exit()
 
 def send_message():   
-    account_sid='AC2f3d6f77e5f97c2a97676f6dcb1e3749'
-    auth_token='0d01619c6d481b0f0ae40421ce02f10a'
+    account_sid='Insert Account SID here'
+    auth_token='Insert Auth Token here'
     client = Client(account_sid, auth_token)
 
     message = client.messages \
     .create(
          body='Patrolling the Mojave almost makes you wish for a nuclear winter',
-         from_='+12283385083',
-         to='+15106958564'
+         from_='Insert Phone Number here',
+         to='Insert Phone Number here'
      )
 
 
@@ -73,9 +72,7 @@ else:
             send_message() 
             print(pir.motion_detected)
 
-if keyboard.read_key() == "a":
-       while(keyboard.read_key() == "a"):
-         servo.angle = -100
+
         
  
   
