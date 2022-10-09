@@ -1,6 +1,6 @@
 Athena Security Sentry was a dysfunctional secruity camera, designed to compete against bank security cameras. 
 
-This project was designed and built in 1-2 weeks and eventually unveiled on Demo Day.
+This project was designed and built in 1 week and eventually unveiled on Demo Day.
 
 Hardware used to create Athena Security Sentry:
 
